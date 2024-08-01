@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barber House</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="src/image/favicon-barber-home.png" type="image/x-icon">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="src/css/tailwind.css">
+    <!-- Icon css -->
+    <link rel="stylesheet" href="src/fonts/style.css">
+    <!-- Scripts JS -->
+    <script src="src/js/script.js" defer></script>
+    <!-- Lib AOS Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <style>
+        .swiper-pagination-bullet-active {
+            background-color: #AE3824 !important;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="font-poppins px-6 py-4 border border-b-2 border-r-0 border-l-0 fixed w-full z-50 bg-white "
+        id="header">
+        <div class="flex justify-between items-center limit-content">
+            <div>
+                <img src="src/image/logo-white-and-orange.svg" alt="Logo Barber House">
+            </div>
+            <nav>
+                <ul class="max-lg:menu-mobile min-lg:menu-desktop" id="menu-container">
+                    <li>
+                        <i class="icon-close text-5xl min-lg:hidden" id="menu-close"></i>
+                    </li>
+                    <li>
+                        <a href="#home" class="link-menu li-after hover:after:w-full">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#services" class="link-menu li-after hover:after:w-full">
+                            Services
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#team" class="link-menu li-after hover:after:w-full">
+                            Team
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#highlights" class="link-menu li-after hover:after:w-full">
+                            Highlights
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#testimonials" class="link-menu li-after hover:after:w-full">
+                            Reviews
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="link-menu li-after hover:after:w-full">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="min-lg:hidden">
+                <i class="icon-menu text-3xl" id="menu-btn"></i>
+            </div>
+        </div>
+    </header>
+
+    <main class="overflow-x-hidden">
+        <section
+            class="mt-28 pb-28 min-lg:pb-32 min-lg:flex min-lg:gap-10 min-lg:items-center limit-content overflow-x-hidden  "
+            id="home">
+            <div class="pr-9 min-lg:order-2 min-lg:flex-1" data-aos="zoom-out-right" data-aos-duration="1000">
+                <div class="relative after-element">
+                    <img src="src/image/image-home.svg" alt="company barber cutting a client's hair"
+                        class="w-full z-10 relative min-lg:rounded-md">
+                </div>
+            </div>
+
+            <div class="mt-12 px-7 text-center min-lg:flex-1 min-lg:text-left" data-aos="zoom-out-left"
+                data-aos-duration="1000">
+                <h1 class="main-title min-lg:leading-normal">
+                    Welcome to a whole new experience of <span class="text-brown-primary">cut</span>
+                </h1>
+                <p class="mt-4 text-md md:text-lg min-lg:pr-14">
+                    You'll leave lookin’ absolutely handsome and ready to take over the world.
+                </p>
+                <button class="mt-7 btn">Mark an appointment</button>
+            </div>
+        </section>
+
+        <div class="divide-1 limit-content"></div>
+
+        <section class="mt-28 pb-28 px-5 min-lg:mt-32 min-lg:pb-44 limit-content" id="services">
+            <div class="section-description" data-aos="fade-down" data-aos-duration="1000">
+                <h2 class="main-title">
+                    Our Barber <span class="text-brown-primary">Services</span>
+                </h2>
+                <p class="mt-5 text-md">
+                    Our Master Barbers Are Expertly Trained To Provide A Range Of Services. Formulated With Only The
+                    Finest Natural Ingredients To Soothe And Moisturize The Skin Before And After.
+                </p>
+            </div>
+
+            <div class="mt-24 flex flex-col gap-14 text-center min-lg:flex-row min-lg:gap-7">
+                <div class="border-b-4 border-brown-primary pb-16" data-aos="fade-down" data-aos-duration="500">
+                    <i class="icon-as text-7xl"></i>
+                    <h3 class="mt-6 font-bold text-2xl md:text-3xl">Beard Treatment</h3>
+                    <p class="mt-4 px-7 text-md md:text-lg ">
+                        The Beard Treatment will leave your beard feeling soft and rejuvenated. This soothing service
+                        starts with a hot towel.
+                    </p>
+                </div>
+
+                <div class="border-b-4 border-brown-primary pb-16" data-aos="fade-down" data-aos-duration="1000">
+                    <i class="icon-Group-1 text-7xl"></i>
+                    <h3 class="mt-6 font-bold text-2xl md:text-3xl">Hair Styling</h3>
+                    <p class="mt-4 px-7 text-md md:text-lg ">
+                        A haircut fit for a king. Performed by our expertly trained Master Barber. Beyond more than just
+                        a great haircut.
+                    </p>
+                </div>
+
+                <div class="border-b-4 border-brown-primary pb-16" data-aos="fade-down" data-aos-duration="1200">
+                    <i class="icon-Group-2 text-7xl"></i>
+                    <h3 class="mt-6 font-bold text-2xl md:text-3xl">Colouring</h3>
+                    <p class="mt-4 px-7 text-md md:text-lg ">Experience the luxurious ritual of Colouring with our
+                        products. Be ready for carnival, or some teenager party.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="divide-2 limit-content"></div>
+
+        <section class="mt-28 pb-28 px-5 limit-content min-lg:mt-32 min-lg:pb-44" id="team">
+            <div class="section-description" data-aos="fade-down" data-aos-duration="1000">
+                <h2 class="main-title">
+                    Meet Our <span class="text-brown-primary">Team</span>
+                </h2>
+                <p class="mt-5 text-md">
+                    The barbers you should trust with your hair and life. You may know us from our years at it, or maybe
+                    you're just a new face.
+                </p>
+            </div>
+
+            <div class="mt-16 text-center flex flex-col gap-5 min-lg:flex-row min-lg:justify-center">
+                <div class="relative w-max" data-aos="fade-down" data-aos-duration="500">
+                    <img src="src/image/team/kristin-watson.jpg" alt="barber image"
+                        class="border-4 border-b-brown-primary border-r-0 border-l-0">
+                    <span class="name-barber">Kristin Watson</span>
+                </div>
+
+                <div class="relative w-max" data-aos="fade-down" data-aos-duration="1000">
+                    <img src="src/image/team/courtney-henry.jpg" alt="barber image"
+                        class="border-4 border-b-brown-primary border-r-0 border-l-0">
+                    <span class="name-barber">Courtney Henry</span>
+                </div>
+
+                <div class="relative w-max" data-aos="fade-down" data-aos-duration="1200">
+                    <img src="src/image/team/wade-warren.jpg" alt="barber image"
+                        class="border-4 border-b-brown-primary border-r-0 border-l-0">
+                    <span class="name-barber">Wade Warren</span>
+                </div>
+            </div>
+        </section>
+
+        <div class="divide-1 limit-content"></div>
+
+        <section class="mt-28 pb-28 px-5 limit-content" id="highlights">
+            <div class="section-description" data-aos="fade-down" data-aos-duration="1000">
+                <h2 class="main-title">
+                    Gallery of Our <span class="text-brown-primary">Highlights</span>
+                </h2>
+                <p class="mt-5 text-md">
+                    Our team of stars are just ready to blow some minds with the new beautiful way of cutting incredible
+                    hair style. With the touch of the brooklyn, and soul, and a little bit of jazz either. You'll love
+                    it.
+                </p>
+            </div>
+
+            <div class="mt-16 grid grid-cols-2 gap-3 min-lg:gap-4 max-lg:max-w-650 min-lg:w-100 min-lg:mx-auto min-lg:grid-cols-4"
+                data-aos="fade-down" data-aos-duration="1000">
+                <div class="flex items-end">
+                    <img src="src/image/gallery/gallery-5.jpg" alt="barber 5" class="w-full">
+                </div>
+
+                <div class="flex items-end">
+                    <img src="src/image/gallery/gallery-4.jpg" alt="barber 4" class="w-full">
+                </div>
+
+                <div
+                    class="col-span-2 bg-[url('../image/gallery/gallery-1.jpg')] bg-cover bg-bottom h-96 min-lg:h-full min-lg:bg-center">
+                </div>
+
+                <div>
+                    <img src="src/image/gallery/gallery-3.jpg" alt="barber 3" class="w-full h-full">
+                </div>
+
+                <div>
+                    <img src="src/image/gallery/gallery-6.jpg" alt="barber 6" class="w-full">
+                </div>
+
+                <div class="col-span-2">
+                    <img src="src/image/gallery/gallery-2.jpg" alt="barber 2" class="w-full h-full">
+                </div>
+            </div>
+        </section>
+
+        <div class="divide-2 limit-content"></div>
+
+        <section class="mt-28 pb-28 px-5 limit-content min-lg:mt-32 min-lg:pb-44" id="testimonials">
+            <div class="min-lg:text-center" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+                data-aos-duration="1000">
+                <h2 class="main-title">
+                    Customers’s <span class="text-brown-primary">Reviews</span>
+                </h2>
+            </div>
+
+            <div class="swiper mySwiper font-dm-sans mt-7 min-lg:mt-10" data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide cursor-grab min-lg:px-5">
+                        <blockquote>
+                            <span class="text-5xl font-serif text-brown-primary relative top-5">“</span> Damn that place
+                            is real shit lol. Got there with the homies, music playing
+                            loooooud, a lot of beers and stuff you know? I felt very comfortable too, the air
+                            conditioner was insane. About the cut: the best of my entire life. The barber guy was a
+                            complete MASTER! The price was very expensive though, but I felt like it was worth paying.
+                            Best Cut Ever.
+                        </blockquote>
+
+                        <div class="mt-5 flex justify-between items-center">
+                            <div>
+                                <cite class="flex items-center gap-3">
+                                    <img src="src/image/bob.jpg" alt="image person" class="w-8 rounded-full">
+                                    <span class="italic text-gray-primary">Bob Hairless</span>
+                                </cite>
+                            </div>
+
+                            <div class="flex gap-1">
+                                <img src="src/image/star.svg" alt="star">
+                                <img src="src/image/star.svg" alt="star">
+                                <img src="src/image/star.svg" alt="star">
+                                <img src="src/image/star.svg" alt="star">
+                                <img src="src/image/star.svg" alt="star">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide cursor-grab min-lg:px-5">
+                        <blockquote>
+                            <span class="text-5xl font-serif text-brown-primary relative top-5">“</span>
+                            I just spent a night at this lovely place as a very special birthday present. It is very
+                            small but our room was very big, beautifully decorated and with a huge state of the art
+                            bathroom which included two beautiful orange bathrobes! The present included a visit to the
+                            spa on the top floor (1 hour and a half)
+                        </blockquote>
+
+                        <div class="mt-5 flex justify-between items-center">
+                            <div>
+                                <cite class="flex items-center gap-3">
+                                    <img src="src/image/damien.jpg" alt="image person" class="w-8 rounded-full">
+                                    <span class="italic text-gray-primary">
+                                        Damien Challeze
+                                    </span>
+                                </cite>
+                            </div>
+
+                            <div class="flex gap-1">
+                                <img src="src/image/star.svg" alt="star">
+                                <img src="src/image/star.svg" alt="star">
+                                <img src="src/image/star.svg" alt="star">
+                                <img src="src/image/star.svg" alt="star">
+                                <img src="src/image/star.svg" alt="star">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide cursor-grab">
+                        <blockquote>
+                            <span class="text-5xl font-serif text-brown-primary relative top-5">“</span>
+                            Well, it was nice.
+                        </blockquote>
+
+                        <div class="mt-5 flex justify-between items-center">
+                            <div>
+                                <cite class="flex items-center gap-3">
+                                    <img src="src/image/mike.jpg" alt="image person" class="w-8 rounded-full">
+                                    <span class="italic text-gray-primary">
+                                        Big Mike
+                                    </span>
+                                </cite>
+                            </div>
+
+                            <di class="flex gap-1">
+                                <img src="src/image/star.svg" alt="star">
+                                <img src="src/image/star.svg" alt="star">
+                                <img src="src/image/star.svg" alt="star">
+                                <img src="src/image/star.svg" alt="star">
+                                <img src="src/image/star.svg" alt="star">
+                            </di>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination !static pt-10"></div>
+            </div>
+        </section>
+
+        <div class="divide-1 limit-content"></div>
+
+        <section
+            class="mt-28 pb-28 px-5 limit-content min-lg:mt-32 min-lg:pb-44 min-lg:flex min-lg:items-center min-lg:justify-around overflow-x-hidden  "
+            id="contact">
+            <div data-aos="fade-right" data-aos-duration="1000">
+                <h2 class="main-title">Get in touch with the team!</h2>
+                <p class="mt-5 text-md min-lg:w-96">
+                    Get in touch with the Barber House. We want to help you get a brand new style. Perfomerd by Master
+                    of the Cut.
+                </p>
+                <button
+                    class="mt-7 bg-brown-primary text-white px-7 py-3 text-lg font-medium font-dm-sans flex items-center gap-3 rounded-md">
+                    <i class="icon-whatsapp text-white text-2xl"></i>
+                    <span>Send a Message</span>
+                </button>
+            </div>
+
+            <div class="mt-16 flex flex-col gap-7 min-lg:mt-0" data-aos="fade-left" data-aos-duration="1000">
+                <div class="flex items-center gap-3">
+                    <i class="icon-phone text-2xl"></i>
+                    <span>+258 123456789</span>
+                </div>
+
+                <div class="flex items-center gap-3">
+                    <i class="icon-map-pin text-2xl"></i>
+                    <span>Mozambique, Maputo</span>
+                </div>
+
+                <div class="flex items-center gap-3">
+                    <i class="icon-mail text-2xl"></i>
+                    <span>contact@barberhouse.com</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-brown-primary overflow-x-hidden">
+        <div class="px-5 py-16 limit-content min-lg:flex min-lg:items-center min-lg:justify-between"
+            data-aos="fade-left" data-aos-duration="1000">
+            <div>
+                <img src="src/image/logo-white-and-black.svg" alt="Logo Barber House">
+                <p class="text-white text-lg mt-6">©2024 Barber House</p>
+                <p class="text-white text-lg mt-4">Made with love by @The chosen technology</p>
+            </div>
+            <div class="mt-10 flex gap-7">
+                <div>
+                    <a href="#">
+                        <i class="icon-instagram text-white text-2xl"></i>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="#">
+                        <i class="icon-facebook text-white text-2xl"></i>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="#">
+                        <i class="icon-youtube text-white text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- AOS Scroll -->
+    <script src="src/js/aosScroll.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+
+</html>
